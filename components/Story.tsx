@@ -31,7 +31,7 @@ const Story = ({
 		<div className={`item ${newSize && 'item-2'}`}>
 			<div className={styles.item}>
 				<div className={styles.wrapperImage}>
-					<a>
+					<a href='/truyen-tranh/vo-luyen-dinh-phong'>
 						{hot && (
 							<span className={styles.icon_hot} />
 						)}

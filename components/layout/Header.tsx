@@ -19,6 +19,7 @@ function Header() {
             <div className={styles.navHeader}>
               <a>
                 <Image
+                  priority
                   width={150}
                   height={32}
                   src={'/images/logo.png'}

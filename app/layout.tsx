@@ -7,14 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 import dynamic from 'next/dynamic'
 import { Container } from "react-bootstrap";
-
-const DynamicHeader = dynamic(() => import('@/components/layout/Header'), {
-  ssr: false,
-})
-
-const DynamicNavbar = dynamic(() => import('@/components/layout/Navbar'), {
-  ssr: false,
-})
+import Header from "@/components/layout/Header";
+import Navbar from "@/components/layout/Navbar";
 
 const DynamicFooter = dynamic(() => import('@/components/layout/Footer'), {
   ssr: true,
@@ -35,8 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <DynamicHeader />
-        <DynamicNavbar />
+        <Header />
+        <Navbar />
         <div className={styles.wrapperMain}>
           <Container className={styles.containerStyle}>
             {children}

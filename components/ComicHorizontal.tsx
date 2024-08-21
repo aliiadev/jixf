@@ -33,8 +33,9 @@ const ComicHorizontal = ({
         <Image
           alt=''
           src={img}
-          width={100}
-          height={50}
+          priority
+          width={55}
+          height={55}
         />
       </a>
       <div className={styles.wrapperContent}>

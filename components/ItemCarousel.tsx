@@ -34,7 +34,7 @@ const ItemCarousel = (props: ItemCarouselType) => {
 
 	return (
 		<div className={styles.main}>
-			<a aria-hidden={true} className={styles.wrapperImage}>
+			<span aria-hidden className={styles.wrapperImage}>
 				<Image
 					alt='img'
 					src={src}
@@ -49,7 +49,7 @@ const ItemCarousel = (props: ItemCarouselType) => {
 						<h3 style={{ display: 'flex', alignItems: "center", gap: "5px" }}><FiClock /> <span>{DateUtil.formatDateSince(updatedAt)}</span></h3>
 					</div>
 				</div>
-			</a>
+			</span>
 
 		</div>
 	);
