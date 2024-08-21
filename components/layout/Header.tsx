@@ -4,6 +4,7 @@ import { IoIosSearch, IoIosClose } from 'react-icons/io'
 import { FaSearch, FaBars, FaRegLightbulb } from 'react-icons/fa'
 import styles from '@/styles/layout/_header.module.scss';
 import Image from 'next/image';
+import ThemeSwitch from '../ThemeSwitch';
 
 function Header() {
 
@@ -36,9 +37,7 @@ function Header() {
             </div>
           </Col>
           <Col md={2} sm={4} xs={4} className={styles.light_chat}>
-            <div className="dark-mode-switch">
-              <FaRegLightbulb size={24} type="checkbox" className={styles.light} id="theme-toggle" />
-            </div>
+            <ThemeSwitch />
           </Col>
           <Col md={0} sm={4} xs={3}>
             <div className={styles.responsive_search}>
