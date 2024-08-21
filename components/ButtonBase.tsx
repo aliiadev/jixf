@@ -9,6 +9,8 @@ type ButtonBaseType = {
   isLoading?: boolean,
   onClick?(): void,
   disable?: boolean,
+  linkBtn?: boolean,
+  href?: string
 }
 
 const ButtonBase = ({
@@ -19,12 +21,25 @@ const ButtonBase = ({
   isLoading = false,
   onClick,
   disable,
+  linkBtn,
   ...rest
 }: ButtonBaseType) => {
 
   if (isLoading === true) {
     text = 'loading';
     disable = true
+  }
+
+  if (linkBtn) {
+    return (
+      <a
+        onClick={onClick}
+        className={`${styles[theme]} ${styles.btn} ${disable ? styles.disable : ''}`}
+        {...rest}
+      >
+        {componentLeft} {text} {componentRight}
+      </a>
+    );
   }
 
   return (

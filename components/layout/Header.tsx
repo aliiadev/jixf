@@ -17,7 +17,7 @@ function Header() {
         <Row className={'items-center'}>
           <Col md={3} sm={4} xs={5}>
             <div className={styles.navHeader}>
-              <a>
+              <a href='/'>
                 <Image
                   priority
                   width={150}

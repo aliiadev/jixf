@@ -24,7 +24,6 @@ export default function ComicDetail() {
   const isLoading = false;
   const mockDescription = 'Chào mừng độc giả thân mến của NetTruyen, Vô Địch Đốn Ngộ là bộ truyện tranh hấp dẫn mà NetTruyen muốn mang đến cho các bạn. Đây là bộ truyện tranh nằm trong thể loại Action, Action, Adventure, Manhua, Shounen, Supernatural, Fantasy trên website của chúng tôi. Như các bạn đã biết, NetTruyen là website đọc truyện tranh với số lượng user gần như lớn nhất tại Việt Nam, chúng tôi luôn cố gắng cập nhật và tìm kiếm những bộ truyện mới nhất với đầy đủ thể loại như: Truyện tranh ngôn tình, truyện tranh xuyên không, truyện manhua, đam mỹ, cổ đại... Đọc truyện tranh online tại website NetTruyen sẽ giúp chúng tôi có kinh phí duy trì và phát triển để xây dựng cộng đồng lớn mạnh hơn. Thể chất bình thường? Thần thông khó luyện? Đốn ngộ liền xong việc! Đối với Tiêu Vân mà nói, không có chuyện gì là đốn ngộ không giải quyết được, nếu có, đốn ngộ thêm một lần nữa là được! Chúc các bạn có những trải nghiệm thú vị và mới mẻ khi đọc bộ truyện Vô Địch Đốn Ngộ tại website NetTruyen. Chúng tôi rất sẵn lòng ghi nhận những đóng góp hoặc phản hồi về chất lượng webiste hay trải nghiệm của các bạn tại đây. Đừng ngại góp ý cho chúng tôi nhé!';
 
-
   return <>
     <Row>
       <Col lg={8} md={12} sm={12} className={styles.center_side}>
@@ -120,7 +119,7 @@ export default function ComicDetail() {
                   }
                 </div>
                 <div className={styles.button}>
-                  <ButtonBase theme={"warning"} text={"Đọc từ đầu"} />
+                  <ButtonBase linkBtn href={`/truyen-tranh/xem/vo-luyen-dinh-phong`} theme={"warning"} text={"Đọc từ đầu"} />
                   <ButtonBase theme={"warning"} text={"Đọc mới nhất"} />
                   {/* {renderButtonReadContinue()} */}
                 </div>
