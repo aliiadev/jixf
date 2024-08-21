@@ -18,4 +18,8 @@ export class DataUtils {
     public static totalNumberFormat(nb: number) {
         return numeral(nb).format('0a')
     }
+
+    public static formatNumber(num: number) {
+        return String(num).replace(/\B(?=(\d{3})+(?!\d))/g, '.')
+    }
 }

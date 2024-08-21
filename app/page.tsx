@@ -1,8 +1,10 @@
 import Carousel from "@/components/Carousel";
-import { Col, Pagination, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import styles from "@/styles/pages/_home.module.scss";
 import { FcFilledFilter } from "react-icons/fc";
 import Story from "@/components/Story";
+import Pagination from "@/components/Pagination";
+import BoxBarTabComic from "@/components/BoxBarTabComic";
 
 export default function Home() {
   return (
@@ -40,7 +42,7 @@ export default function Home() {
           </div>
           <Row className={'m-2'}>
             <Col xs={12} className={'d-flex justify-content-center'}>
-              <Pagination />
+              <Pagination total={1000} />
             </Col>
 
           </Row>
@@ -62,8 +64,8 @@ export default function Home() {
               ))}
             </BoxBar>
           )}
-          <BoxBarComicFollows />
-          <BoxBarTabComic /> */}
+          <BoxBarComicFollows /> */}
+          <BoxBarTabComic />
         </Col>
       </Row>
     </>

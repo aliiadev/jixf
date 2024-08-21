@@ -4,7 +4,7 @@ import React, { useRef } from 'react';
 import Slider from "react-slick";
 import styles from '@/styles/components/_carousel.module.scss';
 import ItemCarousel from "./ItemCarousel";
-import Skeleton from "react-loading-skeleton";
+// import Skeleton from "react-loading-skeleton";
 
 type SlickBtnType = {
   className?: string,
