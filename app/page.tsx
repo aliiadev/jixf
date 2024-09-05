@@ -33,7 +33,7 @@ export default function Home() {
                       hot={true}
                       listChapter={[]}
                       name={''}
-                      img={'https://pub-a657e4e241fb44fd8d810c7c7be4f7e7.r2.dev/vo-dich-don-ngo.webp'}
+                      img={'https://cm.truyensite.site/vo-dich-don-ngo.webp'}
                     />
                   ))
                 }

@@ -17,7 +17,7 @@ module.exports = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'pub-a657e4e241fb44fd8d810c7c7be4f7e7.r2.dev',
+                hostname: 'cm.truyensite.site',
                 port: '',
                 pathname: '/**'
             },

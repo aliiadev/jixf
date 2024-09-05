@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "@/styles/_global.scss";
 import styles from '@/styles/components/_mainContainer.module.scss'
 import "slick-carousel/slick/slick.css";
@@ -15,7 +15,7 @@ const DynamicFooter = dynamic(() => import('@/components/layout/Footer'), {
   ssr: true,
 })
 
-const inter = Montserrat({ subsets: ["latin", "vietnamese"] });
+const inter = Roboto({ subsets: ["latin"], weight: ["400", "700"], style: ["normal", "italic"], display: 'swap' });
 
 export const metadata: Metadata = {
   title: "",
