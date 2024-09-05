@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { IoIosSearch, IoIosClose } from 'react-icons/io'
-import { FaSearch, FaBars, FaRegLightbulb } from 'react-icons/fa'
+import { IoIosSearch } from 'react-icons/io'
+import { FaSearch, FaBars } from 'react-icons/fa'
 import styles from '@/styles/layout/_header.module.scss';
 import Image from 'next/image';
 import ThemeSwitch from '../ThemeSwitch';

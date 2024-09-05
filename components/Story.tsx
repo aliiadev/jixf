@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from "@/styles/components/_Story.module.scss"
 import { BsFillEyeFill } from "react-icons/bs"
-import { BsFillChatFill } from "react-icons/bs"
-import { BsHeartFill } from "react-icons/bs"
+import { BsFillChatFill, BsHeartFill } from "react-icons/bs"
 import { IoClose } from "react-icons/io5"
 import { BsCheckLg } from "react-icons/bs"
 import { Col, Row } from "react-bootstrap";
